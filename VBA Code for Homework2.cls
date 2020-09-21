@@ -1,19 +1,13 @@
-# GT-ATL-DATA-PT-09-2020-U-C
-# VBA Homework - The VBA of Wall Street 
- 
- Create a script that will loop through all the stocks for one year and output the following information.
- Done,
- 1. Dimension Variables
- 2. Declare Initial values
- 3. Format Worksheet for header and results
- 4. a. Using a For function and a IF function  to compare ticker cells content
-    b. Calculate Percent Changes
-    C. Writing results
-5. Use a For Function and IF Function to calculate "Greater Values"
-6. Stablish the Format conditioning
-7. Print Values.
-
- Sub stock_count()
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+END
+Attribute VB_Name = "Sheet2"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Sub stock_count()
 '---------------------------------------------------
 'H O M E W O R K  V B A  W E E K  2
 '---------------------------------------------------
@@ -82,7 +76,7 @@ For i = 2 To LastRow2                                          ' Loop to scan ce
         Range("J" & SumTab_Row).Value = StockIni - StockEnd ' Writing results for Yearly Change
         Select Case StockIni                                ' Stock values comparator
         Case Is <> 0
-        StockPer = (StockIni - StockEnd) / StockIni         ' Calculating Percent Change
+        StockPer = (StockIni - StockEnd) / StockIni         ' Calculatin Percent Change
         Case Is = 0
         StockPer = 0
         End Select
@@ -164,3 +158,11 @@ End With
  
    
  
+ 
+
+ 
+
+'Next
+ 
+End Sub
+
